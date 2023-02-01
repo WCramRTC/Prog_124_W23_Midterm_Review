@@ -1,0 +1,13 @@
+﻿<Window x:Class="Prog_124_W23_Midterm_Review.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog_124_W23_Midterm_Review"
+        mc:Ignorable="d"
+        Title="Test Window" Height="450" Width="800">
+    <Grid Background="#FF56ACF7">
+        <ComboBox x:Name="cbMembers" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Width="332" Height="27"/>
+        <Button x:Name="btnAddMember" Content="Add a new member" HorizontalAlignment="Center" Margin="0,176,0,0" VerticalAlignment="Top" Height="41" Width="196" Click="btnAddMember_Click"/>
+    </Grid>
+</Window>

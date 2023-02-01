@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ListBox x:Name="lbMemberNames" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="224,49,176,48"/>
+        <Button x:Name="btnAddMember" Content="Add New Member" HorizontalAlignment="Left" Margin="48,307,0,0" VerticalAlignment="Top" Height="39" Width="128" Click="btnAddMember_Click"/>
 
     </Grid>
 </Window>

@@ -19,27 +19,20 @@ namespace Prog_124_W23_Midterm_Review
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TestWindow : Window
     {
 
-        public MainWindow()
+
+        public TestWindow()
         {
             InitializeComponent();
-            Preload();
-            lbMemberNames.ItemsSource = Data.members;
-
-            
-
-        }
-
-        void Preload()
-        {
-            Data.members.Add(new Member("Will", "Cram"));
+            // cbMembers
+            cbMembers.ItemsSource = Data.members;
         }
 
         private void btnAddMember_Click(object sender, RoutedEventArgs e)
         {
-            new TestWindow().Show();
+            Data.members.Add(new Member("Zack", "Zepazauer"));
         }
     }
 }

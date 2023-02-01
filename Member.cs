@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prog_124_W23_Midterm_Review
 {
-    class Member
+    public class Member
     {
 
         string _firstName;
