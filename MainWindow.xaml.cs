@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,21 @@ namespace Prog_124_W23_Midterm_Review
     /// </summary>
     public partial class MainWindow : Window
     {
+        ObservableCollection<Member> members = new ObservableCollection<Member>();
+
+
         public MainWindow()
         {
             InitializeComponent();
+            Preload();
+            lbMemberNames.ItemsSource = members;
+
+
+        }
+
+        void Preload()
+        {
+            members.Add(new Member("Will", "Cram"));
         }
     }
 }
